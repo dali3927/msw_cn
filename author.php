@@ -18,6 +18,20 @@
 		
 		</div><!--/archivebox-->
 	
+		<div class="post-alt blog">
+		
+					<div class="entry">
+						<?php 
+							$path = "authors/{$curauth->first_name}-{$curauth->last_name}";
+							$post = get_page_by_path($path);
+				  			$content = apply_filters('the_content', $post->post_content);
+				  			echo $content;
+						?>
+					</div>
+				
+		</div><!--/post-->
+	
+	
 			<?php while (have_posts()) : the_post(); ?>		
 
 				<div class="post-alt blog" id="post-<?php the_ID(); ?>">
@@ -28,7 +42,9 @@
 					<p class="post_date"><?php _e('Posted on','woothemes'); ?> <?php the_time('d F Y'); ?>. <span class="singletags"><?php if (function_exists('the_tags')) { ?><?php the_tags('Tags: ', ', ', ''); ?><?php } ?></span></p>
 		
 					<div class="entry">
-						<?php the_content(__('<span class="continue">Continue Reading</span>','woothemes')); ?> 
+						<?php if ( get_option('woo_blog_excerpt') == "true" ) { the_excerpt() ?>
+						<p><span class="continue"><a title="<?php _e('Permalink to ','woothemes'); ?> <?php the_title(); ?>" href="<?php the_permalink() ?>"><?php _e('Read the full story','woothemes'); ?></a></span></p>
+						<?php } else { the_content(__('<span class="continue">Continue Reading</span>','woothemes')); } ?> 
 					</div>
 		
 					 <p class="posted">Posted in <?php the_category(', ') ?><span class="comments"><?php comments_popup_link(__('0 Comments','woothemes'), __('1 Comment','woothemes'), __('% Comments','woothemes')); ?></span></p>

@@ -20,7 +20,9 @@
 					<p class="post_date">Posted on <?php the_time('d F Y'); ?>. <span class="singletags"><?php if (function_exists('the_tags')) { ?><?php the_tags('Tags: ', ', ', ''); ?><?php } ?></span></p>
 		
 					<div class="entry">
-						<?php the_content('<span class="continue">Read the full story</span>'); ?> 
+						<?php if ( get_option('woo_blog_excerpt') == "true" ) { the_excerpt() ?>
+						<p><span class="continue"><a title="<?php _e('Permalink to ','woothemes'); ?> <?php the_title(); ?>" href="<?php the_permalink() ?>"><?php _e('Read the full story','woothemes'); ?></a></span></p>
+						<?php } else { the_content(__('<span class="continue">Continue Reading</span>','woothemes')); } ?>  
 					</div>
 		
 					 <p class="posted">Posted in <?php the_category(', ') ?><span class="comments"><?php comments_popup_link('Comments (0)', 'Comments (1)', 'Comments (%)'); ?></span></p>
