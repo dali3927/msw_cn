@@ -526,11 +526,12 @@ li{
 }
 .post-alt p.post_date{
 	color: #999999;
-	padding: 5px 0px 10px;
+	padding: 8px 0px 10px;
 	font-size: 11px;
 	font-weight: normal;
 }
 .post-alt p.post_date a { color: #000;}
+.post-alt p.post_date a.avatar_link { float: left; border: 2px solid #ccc; margin-right: 3px;}
 p.posted{
 	font-size: 11px;
 	color: #666666;
@@ -539,7 +540,8 @@ p.posted{
 	line-height: 15px;
 	background-color: #eeeeee;
 	padding: 5px;
-	margin-top: 10px;
+	margin-top: 2px;
+ 	margin-bottom: 10px;
 	text-align: right;
 	border-top:1px solid #ddd;
 	/*border-bottom:1px solid #ddd;*/

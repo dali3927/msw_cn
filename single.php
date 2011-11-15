@@ -15,7 +15,7 @@
 				<div class="post-alt blog" id="post-<?php the_ID(); ?>">
 				
 					<h2><a title="Permanent Link to <?php the_title(); ?>" href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-					<p class="post_date"><?php _e('发表于','woothemes'); ?> <?php the_time('d F Y'); ?> 由<b><?php the_author_posts_link(); ?></b>. <span class="singletags"><?php if (function_exists('the_tags')) { ?><?php the_tags('标签: ', ', ', ''); ?><?php } ?></span></p>
+					<p class="post_date"><a href="<?php echo get_author_posts_url(get_the_author_meta( 'ID' )); ?>" class="avatar_link"><?php echo get_avatar( get_the_author_meta('ID'), 32 ); ?></a><?php _e('发表于','woothemes'); ?> <?php the_time('d F Y'); ?> 由<b><?php the_author_posts_link(); ?></b>. <span class="singletags"><?php if (function_exists('the_tags')) { ?><?php the_tags('标签: ', ', ', ''); ?><?php } ?></span></p>
                     
                     <?php 
                     if(woo_get_embed('embed',595,420))
