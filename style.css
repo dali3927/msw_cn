@@ -16,8 +16,8 @@ Author URI: http://www.woothemes.com/
 }
 body{
 	color: #333;
-	background-color: #ddd;
-	font-family: 微软雅黑, Arial, Helvetica, sans-serif,Times New Roman;
+	background: #ddd url(images/gradient_texture.png) repeat 0 0;
+	font-family: "微软雅黑", Arial, Helvetica, sans-serif,Times New Roman;
 	font-size: 12px;
 	line-height: 18px;
 }
@@ -47,6 +47,14 @@ li{
 	background-color: #FFFFFF;
 	margin:15px auto;
 	border: 1px solid #CCCCCC;
+	border-radius: 4px;
+ 	-webkit-border-radius: 4px;
+ 	-moz-border-radius: 4px;
+ 	-o-border-radius: 4px;
+ 	-khtml-border-radius: 4px;
+ 	-webkit-box-shadow: rgba(0,0,0,0.3) 0 1px 3px;
+ 	-moz-box-shadow: rgba(0,0,0,0.3) 0 1px 3px;
+ 	box-shadow: rgba(0,0,0,0.3) 0 1px 3px;
 }
 /*--- Main Columns ---*/
 #columns{
@@ -96,6 +104,7 @@ li{
 	width:330px;
 	margin:0px !important;
 	padding:0px !important;
+	position: relative;
 	}
 .language {
 	position: absolute;
@@ -258,9 +267,10 @@ li{
 #search{
 	float: right;
 	height: 27px;
-	width:310px;
+	width:241px;
 	margin: 3px 0px 0px !important;
 	padding:0px !important;
+	position: relative;
 }
 * html #search{
 	margin-right: 8px;
@@ -280,8 +290,20 @@ li{
 	height:22px;
 	width: auto;
 	margin:1px 0px 0px 5px !important;
-	border:none;
-	width:69px;
+	border: 0px solid #ccc;
+ 	width:0px;
+ 	padding-left: 30px;
+ 	overflow: hidden;
+ 	background: url(images/search_button.jpg) 0 0 no-repeat;
+ 	position: absolute; top: 2px; right: 3px;
+}
+#nav-right a.gwc_back_url {
+ 	display: block;
+ 	width: 0px;
+ 	overflow: hidden;
+ 	padding-left: 69px;
+ 	background: url(images/gwc_button.png) 0 0 no-repeat;
+ 	position: absolute; top: -22px; right: 22px;
 }
 /*- Header -*/
 #header{
@@ -1147,7 +1169,7 @@ img.ui-datepicker-trigger { border: 0px; padding: 0px; }
 /* Text title */
 #logo  { float:left; height: auto; width: auto; }
 #logo img  { }
-#logo .site-title, #logo .site-description  { font-family: 微软雅黑, "Helvetica Neue", Helvetica, Arial, serif; color: #000; display:none; line-height:100px; }
+#logo .site-title, #logo .site-description  { font-family: "微软雅黑", "Helvetica Neue", Helvetica, Arial, serif; color: #000; display:none; line-height:100px; }
 #logo .site-title a { color:#222; font-size:36px; text-transform:uppercase; font-weight:bold; text-decoration:none; }
 #logo .site-title a:hover { text-decoration:underline; }
 #logo .site-description { display: block !important; float: right; font: bold 14px Arial; margin-top: -26px; padding-left: 22px; color: #d3031c; position:absolute; left: -16px; bottom: 14px;}

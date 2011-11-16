@@ -24,7 +24,7 @@
             <?php if ( get_option('woo_blog_excerpt') == "true" ) { ?><div class="entry"><?php woo_image('width='.get_option('woo_home_thumb_width').'&class=alignright'); ?> </div><?php } ?>
             
 			<h2><a title="<?php _e('Permanent Link to','woothemes'); ?> <?php the_title(); ?>" href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-			<p class="post_date"><a href="<?php echo get_author_posts_url(get_the_author_meta( 'ID' )); ?>" class="avatar_link"><?php echo get_avatar( get_the_author_meta('ID'), 32 ); ?></a><?php _e('发表于','woothemes'); ?> <?php the_time('d F Y'); ?> 由<b><?php the_author_posts_link(); ?></b>. <span class="singletags"><?php if (function_exists('the_tags')) { ?><?php the_tags('标签: ', ', ', ''); ?><?php } ?></span></p>
+			<p class="post_date"><a href="<?php echo get_author_posts_url(get_the_author_meta( 'ID' )); ?>" class="avatar_link"><?php echo get_avatar( get_the_author_meta('ID'), 32 ); ?></a><?php _e('发表于','woothemes'); ?> <?php the_time('d F Y'); ?> 由 <b><?php the_author_posts_link(); ?></b>.<br /> <span class="singletags"><?php if (function_exists('the_tags')) { ?><?php the_tags('标签: ', ', ', ''); ?><?php } ?></span></p>
             
 
 			<div class="entry">

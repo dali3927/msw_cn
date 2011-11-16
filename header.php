@@ -95,11 +95,11 @@
 				
 				<div id="search">
 					<input type="text" value="<?php _e('输入关键词','woothemes'); ?>" onclick="this.value='';" name="s" id="s" />
-					<input name="" type="image" src="<?php bloginfo('template_directory'); ?>/<?php woo_style_path(); ?>/search.gif" value="<?php _e('Go','woothemes'); ?>" class="btn" />
+					<input name="" type="image" value="<?php _e('Go','woothemes'); ?>" class="btn" />
 				</div><!--/search -->
 				
 			</form>
-		
+		 <a href="http://www.greatwallclub.com" class="gwc_back_url">go back to gwc</a>
 		</div><!--/nav-right -->
 		
 	</div><!--/nav-->
