@@ -70,11 +70,15 @@ ul.wooTabs li a.selected, ul.wooTabs li a:hover {
 	color: #CC0000;
 }
 #archivebox {
-	background-color: #f5cccc;
-	border: 1px solid #e06666;
+	background: transparent url(../images/under_the_hood.jpg) repeat-x 0 0;
+ 	border: 1px solid #888;
+}
+#archivebox h4, #archivebox h2, #archivebox h3{
+ 	text-shadow: 0 1px white;
 }
 #archivebox h4 em, #archivebox h2 em, #archivebox h3 em{
-	color:#CC0000;
+	color:#666;
+ 	text-shadow: 0 0 white;
 }
 #rss h2{
 	background-color: #f5cccc;

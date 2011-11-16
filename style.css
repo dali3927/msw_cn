@@ -300,6 +300,7 @@ li{
 #nav-right a.gwc_back_url {
  	display: block;
  	width: 0px;
+ 	height: 22px;
  	overflow: hidden;
  	padding-left: 69px;
  	background: url(images/gwc_button.png) 0 0 no-repeat;
@@ -690,7 +691,7 @@ img.centered {
 	padding-bottom:0px;
 }
 .archivefeed a {
-	background:url(images/ico-arcfeed.gif) center left no-repeat;
+	background:url(images/ico-arcfeed.png) center left no-repeat;
 	height:20px;
 	color:#000;
 	font-weight:bold;

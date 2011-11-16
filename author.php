@@ -14,7 +14,7 @@
 		
 		<div id="archivebox">
         	
-            	<h3><?php _e('Author Archives','woothemes'); ?> | <?php echo $curauth->nickname; ?></h3>        
+            	<h3><em><?php _e('Author Archives','woothemes'); ?> |</em> <?php echo $curauth->nickname; ?></h3>        
 		
 		</div><!--/archivebox-->
 	
