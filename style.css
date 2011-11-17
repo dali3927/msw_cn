@@ -1173,7 +1173,7 @@ img.ui-datepicker-trigger { border: 0px; padding: 0px; }
 #logo .site-title, #logo .site-description  { font-family: "微软雅黑", "Helvetica Neue", Helvetica, Arial, serif; color: #000; display:none; line-height:100px; }
 #logo .site-title a { color:#222; font-size:36px; text-transform:uppercase; font-weight:bold; text-decoration:none; }
 #logo .site-title a:hover { text-decoration:underline; }
-#logo .site-description { display: block !important; float: right; font: bold 14px Arial; margin-top: -26px; padding-left: 22px; color: #d3031c; position:absolute; left: -16px; bottom: 14px;}
+#logo .site-description { display: block !important; float: right; font: bold 14px Arial; font-family: "微软雅黑", "Helvetica Neue", Helvetica, Arial, serif; margin-top: -26px; padding-left: 22px; color: #d3031c; position:absolute; left: -16px; bottom: 14px;}
 
 /*========= plugins: addThis =========*/
 .addthis_toolbox {height: 40px;}
