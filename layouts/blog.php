@@ -35,7 +35,7 @@
 			</div>
 			<!-- JiaThis Button BEGIN -->
 			<div onmouseover="setShare('<?php the_title(); ?>', '<?php the_permalink() ?>');">			
-<div id="jiathis_style_32x32">
+<div id="ckepop">
 <a class="jiathis_button_tsina"></a>
 <a class="jiathis_button_tqq"></a>
 <a class="jiathis_button_tsohu"></a>
